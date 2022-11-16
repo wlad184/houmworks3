@@ -28,6 +28,33 @@ public class Main {
                   System.out.println("Человек окончил университет!");
 
         }
+           System.out.println();
+
+           //task #3
+        int capacityVagona = 102;
+        int totalSittingPlaces = 60;
+        int totalStandingPlaces = capacityVagona - totalSittingPlaces; //42 места стоячих
+        int passenger = 102;
+            System.out.println("В вагоне " + passenger + " пассажиров");
+
+                    if (passenger <= 60){
+                        int sittingPlaces = capacityVagona - totalStandingPlaces - passenger;
+                        System.out.print("В вагоне осталось " + sittingPlaces + " сидячих мест");
+                        System.out.println(" и " + totalStandingPlaces + " стоячих мест");
+                    }
+
+                    if (passenger > 60){
+                            if (passenger < 102) {
+                                int standingPlaces = capacityVagona - passenger;
+                                System.out.println("В вагоне осталось 0 сидячих мест и " + standingPlaces + " стоячих мест");
+                            }
+                        }
+
+                    if (passenger >= 102){
+                            System.out.println("В вагоне мест нет");
+                        }
+
+
 
     }
 
